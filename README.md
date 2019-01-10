@@ -13,4 +13,4 @@ For the first model, we first import the data from the WBDSascii_data file and u
 
 For the other model, we first import the data from the WBDSascii_data3 file, which uses PCA and reduces the dimension of the data by a factor of 1/10th saving us a lot of computational power (which increases exponentially with the size of the data) and drastically reducting the time required to train the model. After that using keras we develop a 3-layered CNN model. This model gives us an accuracy of over 90%. The code for this model is in the file PCA_CNN.py.
 
-These two models gives the most general trade-off a machine learning analyst has to consider while solving a problem with machine learning. The trade-off being between accuracy and computational power.
+These two models gives the most general trade-off a machine learning analyst has to consider while solving a problem with machine learning. The trade-off being between accuracy and computational power. So depending upon what is important to you for your particular problem, we choose the appropriate model.
