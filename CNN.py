@@ -38,7 +38,7 @@ model.add(Dropout(0.2))
 model.add(Activation('relu'))               
 model.add(Dense(num_classes, activation='softmax'))
 
-# Initializing the loss function, optimizer used and the metrics
+# Initializing the loss function, optimizer used and the metrics for our model
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
 
