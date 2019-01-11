@@ -1,6 +1,6 @@
 # Human-Activity-Recognition
 
-In this section, we will use the machine learning techniques like PCA and CNN for a typical Human Activity Recognition problem and implement it with keras. </br>
+In this section, we will use the machine learning techniques like PCA and CNN for a typical Human Activity Recognition problem and implement it in Python with keras library. </br>
 * Principal Component Analysis (PCA) is a dimensionality reduction techniques which makes the high-dimensional input data into low-dimensional one while maintaining maximum variance. </br>
 * Convolutional neural networks (CNN) are deep artificial neural networks that are used primarily to classify images, cluster them by similarity (image search on google), perform object recognition within scenes or task recognition.
 
