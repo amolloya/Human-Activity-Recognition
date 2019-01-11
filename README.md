@@ -1,8 +1,8 @@
 # Human-Activity-Recognition
 
-In this section, we will use the machine learning techniques like PCA and CNN for a typical Human Activity Recognition problem and implement it with tensorflow and keras. </br>
+In this section, we will use the machine learning techniques like PCA and CNN for a typical Human Activity Recognition problem and implement it with keras. </br>
 * Principal Component Analysis (PCA) is a dimensionality reduction techniques which makes the high-dimensional input data into low-dimensional one while maintaining maximum variance. </br>
-* Convolutional neural networks (CNN) are deep artificial neural networks that are used primarily to classify images, cluster them by similarity (image search on google), and perform object recognition within scenes or task recognition.
+* Convolutional neural networks (CNN) are deep artificial neural networks that are used primarily to classify images, cluster them by similarity (image search on google), perform object recognition within scenes or task recognition.
 
 The problem we try to solve here is of Human Activity Recognition (HAR) task for classifying the walking trajectories of individuals into different speeds (slow, comfortable or fast). We use PCA and CNN models for HAR classification task. </br> The input to our model is the walking trajectory (x,y,z co-ordinates) of individuals, which is a time-series of 66-marker positions with respect to time, and the output is the speed class (slow, comfartable or fast) that the individual is walking at.
 
