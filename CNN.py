@@ -13,16 +13,20 @@ num_classes = 3
 
 # Building the model with keras
 model = Sequential()
+# Layer 1
 model.add(Conv2D(32, kernel_size=(3, 3),activation='linear',input_shape=(250,66,1),padding='same'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D((2, 2),padding='same'))
+# Layer 2
 model.add(Conv2D(64, (3, 3), activation='linear',padding='same'))
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2),padding='same'))
+# Layer 3
 model.add(Conv2D(128, (3, 3), activation='linear',padding='same'))
 model.add(Activation('relu'))               
 model.add(MaxPooling2D(pool_size=(2, 2),padding='same'))
 model.add(Flatten())
+# Layer 4
 model.add(Dense(128, activation='linear'))
 model.add(Dropout(0.2))
 model.add(Activation('relu'))               
