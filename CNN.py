@@ -1,18 +1,8 @@
-import tensorflow as tf
-import pandas as pd
-import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Activation, Conv2D, MaxPooling2D
 from sklearn.model_selection import train_test_split
-from sklearn import impute
-import matplotlib.pyplot as plt
 from WBDSascii_data import X,Y
-
-# Fill in the nan or missing values
-imputer = impute.SimpleImputer(missing_values=np.nan, strategy='median')
-
-# Begin a session in tensorflow
-sess = tf.InteractiveSession()
+import matplotlib.pyplot as plt
 
 # Train-test split of the data
 train_X,valid_X,train_label,valid_label = train_test_split(X, Y, test_size=0.2)
@@ -64,5 +54,3 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
-
-sess.close()
