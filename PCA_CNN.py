@@ -1,7 +1,6 @@
-import tensorflow as tf
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Activation, Conv2D, MaxPooling2D
 from sklearn.model_selection import train_test_split
@@ -14,9 +13,6 @@ imputer = impute.SimpleImputer(missing_values=np.nan, strategy='median')
 
 # Applying PCA for dimensionality reduction and selecting the top 9 principal components
 pca = PCA(n_components=9)
-
-# Begin a session in tensorflow
-sess = tf.InteractiveSession()
 
 # Train-test split of the data
 train_X,valid_X,train_label,valid_label = train_test_split(X, Y, test_size=0.2)
@@ -68,5 +64,3 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
-
-sess.close()
